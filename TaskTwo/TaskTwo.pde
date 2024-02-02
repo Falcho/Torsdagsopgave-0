@@ -4,7 +4,7 @@ String city ="København";
 boolean sandt = true;
 int minutter = 60*24;
 float kommatal = 22.12;
-println("Hej, jeg heddder "+teacherName);
+String introduktion = "Hej, jeg heddder "+teacherName;
 boolean falsk = false;
 float regnestykke = 2.2 + 33;
 char bogstav = 'S';
