@@ -4,15 +4,16 @@
  */
 int circleSize;
 int numberOfCircles;
-int red=255;
-int green=255;
-int blue=255;
+float red=random(235,255);
+float green=random(235,255);
+float blue=random(235,255);
 int counter=0;
 int rowCounter=0;
 
 void setup() {
   size(400, 400);
   smooth();
+
 
   numberOfCircles = 20;
   circleSize = width/numberOfCircles;
@@ -48,11 +49,11 @@ void draw() {
 
   //Add the code for 6.c here
   /*Koden her vælger en ny farve i hver linje inden for en specifik range
-  if (counter == 0) {
-    red = (red + 255 - 16)%255;
-    green = (green +255 - 32)%255;
-    blue = (blue + 255 - 8)%255;
-  }*/
+   if (counter == 0) {
+   red = (red + 255 - 16)%255;
+   green = (green +255 - 32)%255;
+   blue = (blue + 255 - 8)%255;
+   }*/
 
   /*Koden her genere en hver nye linje med en tilfældig farve
    if (counter == 0) {
@@ -61,16 +62,15 @@ void draw() {
    blue = int(random(255));
    }*/
 
-  /* Koden her ændre farven i hver nye linje i en gradient
+   //Koden her ændre farven i hver nye linje i en gradient
    if (counter == 0) {
    red = red-15;
    green = green-10;
    blue = blue-5;
-   }*/
+   }
 
-  //Koden her ændre KUN farven i den første circle i hver nye linje
-   red = frameCount % numberOfCircles == 0 ? int(random(255)) : 255;
-   green = frameCount % numberOfCircles == 0 ? int(random(255)) : 255;
-   blue = frameCount % numberOfCircles == 0 ? int(random(255)) : 255;
-   
+  /*Koden her ændre KUN farven i den første circle i hver nye linje
+  red = frameCount % numberOfCircles == 0 ? int(random(255)) : 255;
+  green = frameCount % numberOfCircles == 0 ? int(random(255)) : 255;
+  blue = frameCount % numberOfCircles == 0 ? int(random(255)) : 255;*/
 }
